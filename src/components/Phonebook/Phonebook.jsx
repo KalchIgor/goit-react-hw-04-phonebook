@@ -71,11 +71,14 @@ const filteredContacts = getFilteredContacts();
             <h2>Phoneboook</h2>
             <PhonebookAdd onSubmit={addContact}/>
         </div>
+         {contacts.length > 0 ? 
         <div className={css.contacts}>
             <h2>Contacts</h2>
             <Filter value={filter} onChangeFilter={changeFilter} />
             <Contactlist items={filteredContacts} removeContact={removeContact}/>
-        </div>
+          </div>: (
+        <p >Don't have contacts...</p>
+      )}
         </div>
     )
 }

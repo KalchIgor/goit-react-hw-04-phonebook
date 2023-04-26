@@ -9,7 +9,7 @@
     background: #19bde2;
 }
 
-h2 {
+h2,p {
     max-width: 260px;
     margin:20px auto;
     border-radius: 4px;
